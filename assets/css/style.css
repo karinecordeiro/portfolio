@@ -1,16 +1,27 @@
 
 .logo{
-    color: rgb(244, 130, 88);
+    color: #FF8355;
     margin-top: 1rem;
     font-size: 4rem;
     font-family: 'Poiret One', cursive;
 }
 .color1{
-    background-color:rgb(244, 130, 88)
+    background-color:#FF8355
 }
 
 p{
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-family: 'Poiret One', cursive;
-    color: rgb(244, 130, 88);
+    color: #FF8355;
+}
+a{
+    color: white; 
+}
+.texto{
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+
 }
