@@ -9,6 +9,11 @@
     background-color:#FF8355
 }
 
+nav{
+    color:#343A40;
+
+}
+
 p{
     font-size: 2.25rem;
     font-family: 'Poiret One', cursive;
@@ -23,10 +28,12 @@ a:hover{
     text-align: justify;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
-
 }
 
-/* From uiverse.io by @adamgiebl */
+footer{
+    background-color: #353535;
+}
+/*BOTÃO CV */
 .cssbuttons-io-button {
     background: #FF8355;
     color: #343A40;
@@ -45,9 +52,8 @@ a:hover{
     position: relative;
     height: 2.8em;
     padding-right: 3.3em;
-   }
-   
-   .cssbuttons-io-button .icon {
+}
+.cssbuttons-io-button .icon {
     font-family: 'Poiret One', cursive;
     background: #343A40;
     margin-left: 1em;
@@ -61,23 +67,28 @@ a:hover{
     box-shadow: 0.1em 0.1em 0.6em 0.2em #FF8355;
     right: 0.3em;
     transition: all 0.3s;
-   }
-   
-   .cssbuttons-io-button:hover .icon {
+}
+.cssbuttons-io-button:hover .icon {
     width: calc(100% - 0.6em);
-   }
-   
-   .cssbuttons-io-button .icon svg {
+}
+.cssbuttons-io-button .icon svg {
     width: 1.1em;
     transition: transform 0.3s;
     color: white;
-   }
-   
-   .cssbuttons-io-button:hover .icon svg {
+}.cssbuttons-io-button:hover .icon svg {
     transform: translateX(0.1em);
-   }
-   
-   .cssbuttons-io-button:active .icon {
+}.cssbuttons-io-button:active .icon {
     transform: scale(0.95);
-   }
-   
+}
+
+/*PORCENTAGEM SKIILS*/
+.altura{
+    width: 2.5rem;
+}
+.esq{
+    text-align: end;
+    
+}
+ul{
+    padding-inline-start: 2px;
+}
