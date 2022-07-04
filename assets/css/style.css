@@ -427,3 +427,12 @@ button {
   top: 0;
   opacity: 1;
  }
+
+ /*portfolio*/
+ .texts{
+  text-align: end;
+  color: white;
+  font-size: 1rem;
+  padding-inline-start: 2rem;
+  padding-inline-end: 2rem;
+ }
