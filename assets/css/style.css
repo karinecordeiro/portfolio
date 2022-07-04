@@ -1,4 +1,6 @@
-
+html{
+  scroll-behavior: smooth;
+}
 .logo{
     color: #FF8355;
     margin-top: 1rem;
@@ -8,12 +10,9 @@
 .color1{
     background-color:#FF8355
 }
-
 nav{
-    color:#343A40;
-
+  color:#343A40;
 }
-
 p{
     font-size: 2.25rem;
     font-family: 'Poiret One', cursive;
@@ -29,11 +28,10 @@ a:hover{
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
 }
-
 footer{
     background-color: #353535;
 }
-/*BOTÃO CV */
+/*Sobre mim */
 .cssbuttons-io-button {
     background: #FF8355;
     color: #343A40;
@@ -53,7 +51,7 @@ footer{
     height: 2.8em;
     padding-right: 3.3em;
 }
-.cssbuttons-io-button .icon {
+.cssbuttons-io-button .icone {
     font-family: 'Poiret One', cursive;
     background: #343A40;
     margin-left: 1em;
@@ -68,20 +66,20 @@ footer{
     right: 0.3em;
     transition: all 0.3s;
 }
-.cssbuttons-io-button:hover .icon {
+.cssbuttons-io-button:hover .icone {
     width: calc(100% - 0.6em);
 }
-.cssbuttons-io-button .icon svg {
+.cssbuttons-io-button .icone svg {
     width: 1.1em;
     transition: transform 0.3s;
     color: white;
-}.cssbuttons-io-button:hover .icon svg {
+}.cssbuttons-io-button:hover .icone svg {
     transform: translateX(0.1em);
 }.cssbuttons-io-button:active .icon {
     transform: scale(0.95);
 }
 
-/*PORCENTAGEM SKIILS*/
+/*Habilidades*/
 .altura{
     width: 2.5rem;
 }
@@ -105,8 +103,8 @@ ul{
 .progress-bar{
     background-color: #FF8355;
 }
-/*experiência/
-/*===== Vertical Timeline =====*/
+
+/*experiência*/
 #conference-timeline {
   position: relative;
   max-width: 920px;
@@ -228,9 +226,6 @@ ul{
   font-size: 18px;
   line-height: 20px;
 }
-/*===== // Vertical Timeline =====*/
-
-/*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 830px) {
   #conference-timeline .timeline-start,
   #conference-timeline .timeline-end {
@@ -276,14 +271,9 @@ ul{
   .timeline-article p span.article-number {
     display: none;
   }
-  
 }
-/*===== // Resonsive Vertical Timeline =====*/
-
-
 
 /*educação*/
-
 .circle {
     padding: 16px 20px;
     border-radius: 30%;
@@ -333,7 +323,6 @@ h6{
   left: 50%;
   top: 0;
 }
-
 .timeline div {
   padding: 0;
   height: 40px;
@@ -372,7 +361,6 @@ h6{
 }
 
 /*PORTFÓLIO*/
-
 /* From uiverse.io by @mateusneves */
 button {
   position: relative;
@@ -386,9 +374,8 @@ button {
   text-transform: uppercase;
   overflow: hidden;
   border-radius: 5px
- }
- 
- button::before {
+}
+button::before {
   content: '';
   display: block;
   position: absolute;
@@ -399,14 +386,12 @@ button {
   width: 100%;
   background: #FF8355;
   background: linear-gradient(90deg, #FF8355 20%,#f34100 100%);
-  transition: 0.2s;
- }
- 
- button .label {
+  transition: 0.2s; 
+}
+button .label {
   position: relative;
- }
- 
- button .icon {
+}
+button .icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -417,22 +402,48 @@ button {
   right: 0;
   opacity: 0;
   transition: 0.4s;
- }
- 
- button:hover::before {
+}
+button:hover::before {
   height: 100%;
- }
- 
- button:hover .icon {
+}
+button:hover .icon {
   top: 0;
   opacity: 1;
- }
+}
 
- /*portfolio*/
- .texts{
+/*contato*/
+.texts{
   text-align: end;
   color: white;
   font-size: 1rem;
-  padding-inline-start: 2rem;
-  padding-inline-end: 2rem;
- }
+}
+.after{
+  font-size: 1.5rem;
+  text-align: center;
+  color: white
+}
+.after:hover{
+  font-size: 1.25rem;
+  color:#FF8355
+}
+.footer-text{
+  color:white;
+  font-size: 0.85rem;
+}
+#topo{
+  position: fixed;
+  right: 2rem;
+  bottom:3rem;
+  border-radius: 20%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.75rem;
+  padding-right:0.75rem;
+  text-decoration: none;
+  color:#343140;
+  background-color: #FF8355;
+}
+.rodape{
+ background-color: #2f3334;
+
+}
