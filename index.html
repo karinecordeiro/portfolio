@@ -26,6 +26,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -33,10 +35,14 @@
 <!-- TODO: CORPO DO SITE -->
 
 <!-- *TOPO SITE COM NOME -->
-<body class="bg-dark">
+<body class="">
     <div class="container-fluid">
         <div class="row my-5">
-            <div class="col-md-12 bg-dark d-flex justify-content-center">
+            <div class="col-md-12 d-flex justify-content-center">
+              <label class="switch">
+                <input type="checkbox" id="switch">
+                <span class="slider"></span>
+              </label>
                 <p class="text-center logo">KARINE CORDEIRO</p>
             </div>
         </div>
@@ -50,23 +56,23 @@
       
         <div class="collapse navbar-collapse justify-content-center" id="conteudoNavbarSuportado">
           <ul class="navbar-nav justify-content-center">
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="#sm">SOBRE MIM</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#sm">SOBRE MIM</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#hb">HABILIDADES</a>
+              <a class="nav-link" href="#hb">HABILIDADES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#ex">EXPERIÊNCIAS</a>
+              <a class="nav-link" href="#ex">EXPERIÊNCIAS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#ed">EDUCAÇÃO</a>
+              <a class="nav-link" href="#ed">EDUCAÇÃO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#pt">PORTFÓLIO</a>
+              <a class="nav-link" href="#pt">PORTFÓLIO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active text-dark" href="#ct">CONTATO</a>
+                <a class="nav-link" href="#ct">CONTATO</a>
               </li>
           </ul>
         </div>
@@ -90,7 +96,7 @@
               </a>
           </div>
           <div class="col-md-6 mt-4">
-          <img src="/assets/imagem/foto.png" class="img-fluid" alt="minha-imagem">
+          <img id="imagem" src="/assets/imagem/foto.png" class="img-fluid" alt="minha-imagem">
           </div>
         </div>
       </div>
@@ -109,23 +115,23 @@
 
                   <!-- !JAVA -->
                   <div class=" d-flex align-items-center w-100">
-                    <img src="/assets/imagem/java.png" width="70px" alt="java">              
+                    <div class="item">JAVA</div>                 
                     <div class="progress w-100 ml-3">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
                     </div>
                   </div>
 
                   <!-- !JAVASCRIPT -->
                   <div class=" d-flex align-items-center w-100">
-                    <img src="/assets/imagem/js.png" width="70px" alt="javascript">        
+                    <div class="item">JAVASCRIPT</div>        
                     <div class="progress w-100 ml-3">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
                     </div>
                   </div>
 
                   <!-- !TYPESCRIPT -->
                   <div class=" d-flex align-items-center w-100">
-                    <img src="/assets/imagem/type.png" width="70px" alt="typescript">             
+                    <div class="item">TYPESCRIPT</div>
                     <div class="progress w-100 ml-3">
                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
                     </div>
@@ -133,7 +139,7 @@
 
                   <!-- !PHP -->
                   <div class=" d-flex align-items-center w-100">
-                    <img src="/assets/imagem/php.png" width="70px" alt="php">         
+                    <div class="item">PHP</div>         
                     <div class="progress w-100 ml-3">
                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
                     </div>
@@ -141,17 +147,17 @@
 
                   <!-- !HTML -->
                   <div class=" d-flex align-items-center w-100">
-                    <img src="/assets/imagem/html.png" width="70px" alt="html">          
+                    <div class="item">HTML</div>         
                     <div class="progress w-100 ml-3">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
                     </div>
                   </div>
 
                   <!-- !CSS -->
                   <div class=" d-flex align-items-center w-100">
-                    <img src="/assets/imagem/css.png" width="70px" alt="css">            
+                    <div class="item">CSS</div>            
                     <div class="progress w-100 ml-3">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%"></div>
                     </div>
                   </div>
               </div>
@@ -171,7 +177,7 @@
                     <div class="progress w-100 mr-3">
                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
                     </div>
-                    <img src="/assets/imagem/bootstrap.png" width="70px" alt="bootstrap"> 
+                    <div class="item">BOOTSTRAP</div>
                   </div>
 
                   <!-- !SPRINGBOOT -->
@@ -179,7 +185,7 @@
                     <div class="progress w-100 mr-3">
                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
                     </div>
-                    <img src="/assets/imagem/spring.png" width="70px" alt="springboot"> 
+                    <div class="item">SPRINGBOOT</div>
                   </div>
 
                   <!-- !ANGULAR -->
@@ -187,23 +193,23 @@
                     <div class="progress w-100 mr-3">
                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
-                    <img src="/assets/imagem/angular.png" width="70px" alt="angular"> 
+                    <div class="item">ANGULAR</div>
                   </div>
 
                   <!-- !PHOTOSHOP -->
                   <div class=" d-flex align-items-center w-100">
                     <div class="progress w-100 mr-3">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
                     </div>
-                    <img src="/assets/imagem/photoshop.png" width="70px" alt="photoshop"> 
+                    <div class="item">PHOTOSHOP</div> 
                   </div>
                  
                   <!-- !ILLUSTRATOR -->
                   <div class=" d-flex align-items-center w-100">
                     <div class="progress w-100 mr-3">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 15%"></div>
+                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 20%"></div>
                     </div>
-                    <img src="/assets/imagem/illustrator.png" width="70px" alt="indesign"> 
+                    <div class="item">ILLUSTRATOR</div> 
                   </div>
 
                   <!-- !INDESIGN -->
@@ -211,7 +217,7 @@
                     <div class="progress w-100 mr-3">
                       <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
                     </div>
-                    <img src="/assets/imagem/indesing.png" width="70px" alt="indesing"> 
+                    <div class="item">INDESING</div>
                   </div>
                 </ul>
               </div>
@@ -236,9 +242,9 @@
                   <!-- !OPUS MOTOS -->
           <div class="timeline-article">
             <div class="content-left-container">
-              <div class="content-left text-light">
-                <span> <i class="fa fa-building-o" aria-hidden="true"></i> OPUS MOTOS</span>
-                  <p>Principais atuações: Fotografia e edição de fotos; Publicação de anúncios; Gerenciamento de venda e embalagem de produtos para envio ao Mercado Livre.
+              <div class="content-left">
+                <span class="text"> <i class="fa fa-building-o" aria-hidden="true"></i> OPUS MOTOS</span>
+                  <p class="text">Principais atuações: Fotografia e edição de fotos; Publicação de anúncios; Gerenciamento de venda e embalagem de produtos para envio ao Mercado Livre.
               </div>
           </div>
           <div class="meta-date">
@@ -250,9 +256,9 @@
                 <!-- !CEARÁ MAR -->
           <div class="timeline-article">
             <div class="content-right-container">
-              <div class="content-right text-light">
-                <span><i class="fa fa-building-o" aria-hidden="true"></i> CEARÁ MAR </span>
-                <p>Principais atuações: Projeto de interiores de móveis sob medida com briefing de clientes; Atendimento ao cliente por via presencial, e remota por telefone, email e redes sociais. Gerenciamento do Instagram, com edição de fotos para publicação.</p>
+              <div class="content-right">
+                <span class="text"><i class="fa fa-building-o" aria-hidden="true"></i> CEARÁ MAR </span>
+                <p class="text">Principais atuações: Projeto de interiores de móveis sob medida com briefing de clientes; Atendimento ao cliente por via presencial, e remota por telefone, email e redes sociais. Gerenciamento do Instagram, com edição de fotos para publicação.</p>
               </div>
             </div>
             <div class="meta-date">
@@ -278,8 +284,8 @@
                 <div class="circle font-weight-bold"><i class="fa fa-graduation-cap"></i></i></div>
               </div>
               <div class="col-6">
-                <h4>Ensino médio</h4>
-                <h6 class="text-light"> 2013 - 2015</h6>
+                <h4>ENSINO MÉDIO</h4>
+                <h6 class="text"> 2013 - 2015</h6>
                 <p class="text">Completo - Concluído</p>
               </div>
             </div>
@@ -298,9 +304,9 @@
             <!-- !WEB DEVELOPER-->
             <div class="row align-items-center justify-content-end connecting-lines d-flex">
               <div class="col-6 text-right">
-                <h4>Web Developer</h4>
-                <h6 class="text-light">2016 - 2018</h6>
-                <p class="texts"> Curso voltado para design de produtos digitais, utilizando ferramentas para criação e edição de imagens e criação de sites. </p>
+                <h4>WEB DEVELOPER</h4>
+                <h6 class="texts">2016 - 2018</h6>
+                <p class="text"> Curso voltado para design de produtos digitais, utilizando ferramentas para criação e edição de imagens e criação de sites. </p>
               </div>
               <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
                 <div class="circle font-weight-bold"><i class="fa fa-graduation-cap"></i></div>
@@ -324,8 +330,8 @@
                 <div class="circle font-weight-bold"><i class="fa fa-graduation-cap"></i></div>
               </div>
               <div class="col-6">
-                <h4 class="">Bootcamp Generation</h4>
-                <h6 class="text-light">fevereiro 2022 - maio 2022</h6>
+                <h4 class="">BOOTCAMP GENERATION</h4>
+                <h6 class="text">fevereiro 2022 - maio 2022</h6>
                 <p class="text">Bootcamp realizado no período de 12 semanas, com foco principal em apredizagem de Desenvolvimento Web Full Stack trazendo com principais meios Back-end e Front-end utilizando como linguagem principal Java. </p>
               </div>
             </div>
@@ -343,13 +349,13 @@
 
                <!-- !VEGGIEATS -->
               <div class="col-md-4 text-center d-flex justify-content-center">
-                <div class="card bg-dark" style="width: 18rem;">
+                <div class="card fcard" style="width: 18rem;">
                   <img src="/assets/imagem/veggieats.jpg" class="card-img-top p-2" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title text-light">VEGGIEATS</h5>
+                    <h5 class="card-title text text-center">VEGGIEATS</h5>
                     <p class="text">Plataforma e-commerce estilo Marketplace, desenvoldida como objetivo para ODS 8, trazendo como principais focos: emprego e sustentabilidade.</p>
                     <a href="https://veggieats.netlify.app/#/inicio" target="_blank">
-                      <button>
+                      <button class="visite">
                         <span class="label font-weight-bold">Visite</span>
                         <span class="icon">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
@@ -362,13 +368,13 @@
 
               <!-- !BLOG PESSOAL -->
               <div class="col-md-4 text-center d-flex justify-content-center">
-                <div class="card bg-dark mt-3" style="width: 18rem;">
+                <div class="card fcard mt-3" style="width: 18rem;">
                   <img src="/assets/imagem/blogpessoal.jpg" class="card-img-top p-1" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title text-light">BLOG PESSOAL</h5>
+                    <h5 class="card-title text text-center">BLOG PESSOAL</h5>
                     <p class="text">Blog Pessoal desenvolvido para pratica de Back-end com banco de dados desenvolvido em Java, e Front-end consumindo API Rest utilizando como framework o Angular.</p>
                     <a href="https://blogpessoalkarine.netlify.app/#/entrar" target="_blank">
-                      <button>
+                      <button class="visite">
                         <span class="label font-weight-bold">Visite</span>
                         <span class="icon">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
@@ -381,13 +387,13 @@
 
               <!-- !Em breve -->
               <div class="col-md-4 text-center d-flex justify-content-center">
-                <div class="card bg-dark mt-3" style="width: 18rem;">
+                <div class="card fcard mt-3" style="width: 18rem;">
                   <img src="/assets/imagem/embreve.jpg" class="card-img-top p-1" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title text-light">EM BREVE</h5>
+                    <h5 class="card-title text text-center">EM BREVE</h5>
                     <p class="text">Projeto em fase de construção inicial, utilizando JavaScript.</p>
                     <!-- <a href="#" target="_blank">
-                      <button>
+                      <button class="visite">
                         <span class="label font-weight-bold">Visite projetos anteriores</span>
                         <span class="icon">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
@@ -409,7 +415,7 @@
 
      <div class="container-fluid rodape pt-3">
         <div class="row">
-          <div class="col-md-12 text-center text-light">
+          <div class="col-md-12 text-center">
             <p id="ct" class="text-center">CONTATOS</p>
             <a href="https://www.linkedin.com/in/karinecordeiro/" class="after" target="_blank"> <i class="fa fa-linkedin-square px-2" aria-hidden="true"></i></a>
             <a href="https://github.com/karinecordeiro" class="after" target="_blank"><i class="fa fa-github px-2" aria-hidden="true"></i></a>
@@ -418,7 +424,7 @@
             <a class="after" href="mailto:karinecordeiro1998@gmail.com"><i class="fa fa-google px-2" aria-hidden="true"></i><span class="text email"></i></a>
             <a class="after" href="mailto:karine.cordeiro1998@hotmail.com"><i class="fa fa-windows px-2" aria-hidden="true"></i><span class="text email"></i></a>
             <!-- <a href="" class="after"><i class="fa fa-instagram px-4" aria-hidden="true"></i></a>  -->
-            <p class="footer-text text-center mt-4">&copy; 2022 
+            <p class="footer-text text text-center mt-4">&copy; 2022 
           </div>
         </div>
         

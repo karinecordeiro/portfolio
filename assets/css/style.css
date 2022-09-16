@@ -1,40 +1,137 @@
+:root{
+  --cor-laranja:  #ff8355;
+  --texto-branco:white;
+  --cor-footer: #2f3334;
+  --cor-fundo: #343A40;
+  --cor-progresso: #5b5959;
+  --cor-degrade: #f34100;
+}
+/*darkmode*/
+.dark-mode:root{
+  --cor-laranja:  #6b079a;
+  --texto-branco:#343A40;
+  --cor-footer: #e7e2e9;
+  --cor-fundo: white;
+  --cor-progresso: #e8e8e8;
+  --cor-degrade: #a577c6;
+
+}
+body{
+  background-color: var(--cor-fundo);
+}
 html{
   scroll-behavior: smooth;
 }
 .logo{
-    color: #FF8355;
+    color: var(--cor-laranja);
     margin-top: 1rem;
     font-size: 4rem;
     font-family: 'Poiret One', cursive;
+    margin-top: 50px;
 }
+
+/*botão darkmode*/
+/* From uiverse.io by @victoryamaykin */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 120px;
+  height: 34px;
+ }
+ 
+ .switch input {
+  display: none;
+ }
+ 
+ .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--cor-laranja);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+ }
+ 
+ .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--cor-fundo);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+ }
+ 
+ input:checked + .slider {
+  background-color: #6b079a;
+ }
+ 
+ /* input:focus + .slider {
+  box-shadow: 0 0 1px #fbfce7;
+ } */
+ 
+ input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(85px);
+ }
+ 
+ /*------ ADDED CSS ---------*/
+ .slider:after {
+  content: 'ESCURO';
+  color: var(--cor-fundo);
+  display: block;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+  font-weight: bold;
+ }
+ 
+ input:checked + .slider:after {
+  content: 'CLARO';
+ }
+
 .color1{
-    background-color:#FF8355
+    background-color:var(--cor-laranja);
 }
-nav{
-  color:#343A40;
+.navbar-light .navbar-nav .nav-link{
+  color: var(--cor-fundo);
 }
 p{
     font-size: 2.25rem;
     font-family: 'Poiret One', cursive;
-    color: #FF8355;
+    color: var(--cor-laranja);
 }
 a:hover{
     text-decoration: none;
 }
 .texto{
-    color: white;
+    color: var(--texto-branco);
     font-size: 1rem;
     text-align: justify;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
+    font-family: 'Work Sans', sans-serif;
 }
-footer{
-    background-color: #353535;
-}
+
+/* footer{
+    background-color: var(--cor-escura);
+
+} */
 /*Sobre mim */
 .cssbuttons-io-button {
-    background: #FF8355;
-    color: #343A40;
+    background: var(--cor-laranja);
+    color: var(--cor-fundo);
     font-family: inherit;
     padding: 0.35em;
     padding-left: 1.2em;
@@ -45,7 +142,7 @@ footer{
     letter-spacing: 0.05em;
     display: flex;
     align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #FF8355;
+    box-shadow: inset 0 0 1.6em -0.6em var(--cor-laranja);
     overflow: hidden;
     position: relative;
     height: 2.8em;
@@ -53,7 +150,7 @@ footer{
 }
 .cssbuttons-io-button .icone {
     font-family: 'Poiret One', cursive;
-    background: #343A40;
+    background: var(--cor-fundo);
     margin-left: 1em;
     position: absolute;
     display: flex;
@@ -62,7 +159,7 @@ footer{
     height: 2.2em;
     width: 2.2em;
     border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #FF8355;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em var(--cor-laranja);
     right: 0.3em;
     transition: all 0.3s;
 }
@@ -72,7 +169,7 @@ footer{
 .cssbuttons-io-button .icone svg {
     width: 1.1em;
     transition: transform 0.3s;
-    color: white;
+    color: var(--texto-branco);;
 }.cssbuttons-io-button:hover .icone svg {
     transform: translateX(0.1em);
 }.cssbuttons-io-button:active .icon {
@@ -98,10 +195,24 @@ ul{
     background-color:none;
 }
 .progress{
-    background-color: #5b5959;
+    background-color: var(--cor-progresso);
 }
 .progress-bar{
-    background-color: #FF8355;
+    background-color: var(--cor-laranja);
+}
+.item{
+  width: 210px;
+  height: 42px;
+  border: 2px solid var(--cor-laranja);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  font-family: "Hammersmith One", sans-serif;
+
+  color: var(--cor-laranja);
+  font-size: 0.83rem
 }
 
 /*experiência*/
@@ -118,9 +229,9 @@ ul{
   font-family: 'Poiret One', cursive;
   font-size: 18px;
   text-transform: uppercase;
-  background: #FF8355;
+  background: var(--cor-laranja);
   padding: 15px 23px;
-  color: #343140;
+  color: var(--cor-fundo);
   max-width: 5%;
   width: 100%;
   text-align: center;
@@ -133,7 +244,7 @@ ul{
   top: 0;
   left: 50%;
   margin-left: -2px;
-  background: #FF8355;
+  background: var(--cor-laranja);
   z-index: -1;
 }
 #conference-timeline .conference-timeline-content {
@@ -164,7 +275,8 @@ ul{
 .timeline-article .content-right {
   position: relative;
   width: auto;
-  border: 1px solid #FF8355;
+  border: 3px solid var(--cor-laranja);
+  border-radius: 10px;
   background-color: none;
   box-shadow: 0 1px 3px rgba(0,0,0,.03);
   padding: 27px 25px;
@@ -172,8 +284,8 @@ ul{
 .timeline-article p {
   text-align: justify;
   padding: 0;
-  font-weight: 400;
-  color: white;
+  font-weight: normal;
+  color: var(--texto-branco);;
   font-size: 14px;
   line-height: 24px;
   position: relative;
@@ -190,7 +302,7 @@ ul{
   top: 20px;
   font-size: 23px;
   font-family: "FontAwesome";
-  color: white;
+  color: var(--texto-branco);;
 }
 .timeline-article .content-left:before {
   content: "\f0da";
@@ -208,9 +320,9 @@ ul{
   width: 70px;
   height: 70px;
   margin-left: -35px;
-  color: #343140;
+  color: var(--cor-fundo);
   border-radius: 20%;
-  background: #FF8355;
+  background: var(--cor-laranja);
 }
 .timeline-article .meta-date .date,
 .timeline-article .meta-date .month {
@@ -277,28 +389,38 @@ ul{
 .circle {
     padding: 16px 20px;
     border-radius: 30%;
-    background-color: #FF8355;
-    color:#343140;
+    background-color: var(--cor-laranja);
+    color:var(--cor-fundo);
     max-height: 50px;
     z-index: 2;
 }
 h2 {
     color: #6f45a7;
-    font-weight: bold;
+    font-weight: normal;
 }
 h4{
-  font-family: 'Poiret One', cursive;
-    color: #FF8355; 
+  font-family: 'Work Sans', sans-serif;
+    color: var(--cor-laranja);
+    font-weight: normal;
 }
 h6{
-  font-family: 'Poiret One', cursive;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
 }
+
 .text{
-    color: white;
+    color: var(--texto-branco);
     font-size: 1rem;
     text-align: justify;
-    font-family: 'Poiret One', cursive;
-    
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+}
+.text-light{
+  color: var(--texto-branco);
+  font-size: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: normal;
+  text-align: right!important;
 }
 .connecting-lines.row .col-2 {
   align-self: stretch;
@@ -306,7 +428,7 @@ h6{
 .connecting-lines.row .col-2::after {
   content: "";
   position: absolute;
-  border-left: 3px solid #FF8355;
+  border-left: 3px solid var(--cor-laranja);
   z-index: 1;
 }
 .connecting-lines.row .col-2.bottom::after {
@@ -328,7 +450,7 @@ h6{
   height: 40px;
 }
 .timeline hr {
-  border-top: 3px solid #FF8355;
+  border-top: 3px solid var(--cor-laranja);
   margin: 0;
   top: 17px;
   position: relative;
@@ -338,7 +460,7 @@ h6{
   overflow: hidden;
 }
 .timeline .corner {
-  border: 3px solid #FF8355;
+  border: 3px solid var(--cor-laranja);
   width: 100%;
   position: relative;
   border-radius: 15px;
@@ -361,21 +483,24 @@ h6{
 }
 
 /*PORTFÓLIO*/
+.fcard{
+  background-color: var(--cor-fundo);
+}
 /* From uiverse.io by @mateusneves */
-button {
+button.visite {
   position: relative;
   font-size: 14px;
   letter-spacing: 3px;
   height: 3em;
   padding: 0 3em;
   border: none;
-  background-color: #FF8355;
-  color: #343A40;
+  background-color: var(--cor-laranja);
+  color: var(--cor-fundo);
   text-transform: uppercase;
   overflow: hidden;
   border-radius: 5px
 }
-button::before {
+button.visite::before {
   content: '';
   display: block;
   position: absolute;
@@ -384,8 +509,8 @@ button::before {
   left: 0;
   height: 0px;
   width: 100%;
-  background: #FF8355;
-  background: linear-gradient(90deg, #FF8355 20%,#f34100 100%);
+  background: var(--cor-laranja);
+  background: linear-gradient(90deg, var(--cor-laranja) 20%,var(--cor-degrade) 100%);
   transition: 0.2s; 
 }
 button .label {
@@ -414,36 +539,36 @@ button:hover .icon {
 /*contato*/
 .texts{
   text-align: end;
-  color: white;
+  color: var(--texto-branco);;
   font-size: 1rem;
 }
 .after{
   font-size: 1.5rem;
   text-align: center;
-  color: white
+  color: var(--texto-branco);
 }
 .after:hover{
   font-size: 1.25rem;
-  color:#FF8355
+  color:var(--cor-laranja);
 }
 .footer-text{
-  color:white;
+  color:var(--texto-branco);
   font-size: 0.85rem;
 }
 #topo{
   position: fixed;
-  right: 2rem;
-  bottom:3rem;
+  right: 1rem;
+  bottom:12rem;
   border-radius: 20%;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right:0.75rem;
   text-decoration: none;
-  color:#343140;
-  background-color: #FF8355;
+  color:var(--cor-fundo);
+  background-color: var(--cor-laranja);
 }
 .rodape{
- background-color: #2f3334;
-
+  background-color: var(--cor-footer);
+  margin-top: 2rem
 }
