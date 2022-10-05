@@ -5,6 +5,8 @@
   --cor-fundo: #343A40;
   --cor-progresso: #5b5959;
   --cor-degrade: #f34100;
+  --imgfoto: url('/assets/imagem/foto.png');
+  --imgfig: url();
 }
 /*darkmode*/
 .dark-mode:root{
@@ -14,8 +16,10 @@
   --cor-fundo: white;
   --cor-progresso: #e8e8e8;
   --cor-degrade: #a577c6;
-
+  --imgfoto: url('/assets/imagem/fotoroxa.png');
 }
+
+
 body{
   background-color: var(--cor-fundo);
 }
@@ -29,6 +33,15 @@ html{
     font-family: 'Poiret One', cursive;
     margin-top: 50px;
 }
+#imgfoto{
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  height: 400px;
+  background-image: var(--imgfoto);
+  background-repeat: no-repeat;
+}
 
 /*botão darkmode*/
 /* From uiverse.io by @victoryamaykin */
@@ -37,8 +50,8 @@ html{
   display: inline-block;
   width: 120px;
   height: 34px;
- }
- 
+}
+
  .switch input {
   display: none;
  }
