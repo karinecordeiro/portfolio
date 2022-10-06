@@ -6,7 +6,7 @@
   --cor-progresso: #5b5959;
   --cor-degrade: #f34100;
   --imgfoto: url('/assets/imagem/foto.png');
-  --imgfig: url();
+  --imgfig: url('/assets/imagem/sklaranja.svg');
 }
 /*darkmode*/
 .dark-mode:root{
@@ -17,6 +17,7 @@
   --cor-progresso: #e8e8e8;
   --cor-degrade: #a577c6;
   --imgfoto: url('/assets/imagem/fotoroxa.png');
+  --imgfig: url('/assets/imagem/skroxa.svg');
 }
 
 
@@ -33,15 +34,23 @@ html{
     font-family: 'Poiret One', cursive;
     margin-top: 50px;
 }
-#imgfoto{
-  max-width: 100%;
-  height: auto;
-  display: block;
 
-  height: 400px;
-  background-image: var(--imgfoto);
-  background-repeat: no-repeat;
-}
+#imgfoto{
+    width: 100%;
+    height: 400px;
+    background-image: var(--imgfoto);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+#imgfig{
+    width: 100%;
+    height: 400px;
+    background-image: var(--imgfig);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 
 /*botão darkmode*/
 /* From uiverse.io by @victoryamaykin */
