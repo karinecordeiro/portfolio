@@ -7,6 +7,7 @@
   --cor-degrade: #f34100;
   --imgfoto: url('/assets/imagem/foto.png');
   --imgfig: url('/assets/imagem/sklaranja.svg');
+  --fonte-texto: @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 }
 /*darkmode*/
 .dark-mode:root{
@@ -18,6 +19,7 @@
   --cor-degrade: #a577c6;
   --imgfoto: url('/assets/imagem/fotoroxa.png');
   --imgfig: url('/assets/imagem/skroxa.svg');
+  --fonte-texto: @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 }
 
 
@@ -143,7 +145,7 @@ a:hover{
     text-align: justify;
     padding-inline-start: 2rem;
     padding-inline-end: 2rem;
-    font-family: 'Work Sans', sans-serif;
+    font-family: var(--fonte-texto);
 }
 
 /* footer{
@@ -231,13 +233,16 @@ ul{
   padding: 10px;
   margin-bottom: 10px;
   background: transparent;
-  font-family: "Hammersmith One", sans-serif;
-
+  font-family: var(--fonte-texto);
   color: var(--cor-laranja);
   font-size: 0.83rem
 }
 
 /*experiência*/
+.nome{
+  font-weight: 500;
+  color: var(--texto-branco);
+}
 #conference-timeline {
   position: relative;
   max-width: 920px;
@@ -249,7 +254,6 @@ ul{
   border-radius: 10%;
   display: table;
   font-family: 'Poiret One', cursive;
-  font-size: 18px;
   text-transform: uppercase;
   background: var(--cor-laranja);
   padding: 15px 23px;
@@ -306,7 +310,6 @@ ul{
 .timeline-article p {
   text-align: justify;
   padding: 0;
-  font-weight: normal;
   color: var(--texto-branco);;
   font-size: 14px;
   line-height: 24px;
@@ -322,8 +325,8 @@ ul{
 .timeline-article .content-right:before{
   position: absolute;
   top: 20px;
-  font-size: 23px;
-  font-family: "FontAwesome";
+  font-size: 10px;
+  font-family: 'Poiret One', cursive;
   color: var(--texto-branco);;
 }
 .timeline-article .content-left:before {
@@ -353,7 +356,7 @@ ul{
   font-weight: 900;
 }
 .timeline-article .meta-date .date {
-  font-size: 13px;
+  font-size: 10px;
   line-height: 25px;
 }
 .timeline-article .meta-date .month {
@@ -418,30 +421,26 @@ ul{
 }
 h2 {
     color: #6f45a7;
-    font-weight: normal;
 }
 h4{
-  font-family: 'Work Sans', sans-serif;
-    color: var(--cor-laranja);
-    font-weight: normal;
+  font-family: var(--fonte-texto);
+  color: var(--cor-laranja);
+  
 }
 h6{
-  font-family: 'Work Sans', sans-serif;
-  font-weight: normal;
+  font-family: var(--fonte-texto);
 }
 
 .text{
     color: var(--texto-branco);
     font-size: 1rem;
     text-align: justify;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: normal;
+    font-family: var(--fonte-texto);
 }
 .text-light{
   color: var(--texto-branco);
   font-size: 1rem;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: normal;
+  font-family: var(--fonte-texto);
   text-align: right!important;
 }
 .connecting-lines.row .col-2 {
